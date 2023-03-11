@@ -11,7 +11,7 @@ $spec = @{
         # This is not meant to be publicly used, only for debugging how long it takes to capture a subset.
         _measure_subset = @{ type = 'bool'; default = $false }
 
-        fact_path = @{ type = 'path' }
+        fact_path = @{ type = 'path'; default = 'c:\ansible\facts' }
         gather_subset = @{ type = 'list'; elements = 'str'; default = 'all' }
         gather_timeout = @{ type = 'int'; default = 10 }
     }
